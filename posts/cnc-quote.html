@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CNC 报价差了 3 倍，钱花在哪儿了 · 唐工笔记</title>
+  <meta name="description" content="材料利用率、装夹次数、公差等级：影响 CNC 单价的三个大头，以及能砍的地方。">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">唐工<span>笔记</span></a>
+      <nav class="nav">
+        <a href="../index.html">首页</a>
+        <a class="on" href="../writing.html">文章</a>
+        <a href="../works.html">作品</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="article">
+      <header>
+        <p class="kicker">制造 · 成本</p>
+        <h1>CNC 报价差了 3 倍，钱花在哪儿了</h1>
+        <p class="meta">2026.10.12 · 约 6 分钟</p>
+      </header>
+
+      <div class="prose">
+        <p>同一套图纸发给五家厂，回来的价格从 180 到 560。外行会怀疑有人乱报，实际上多数差异都能对上账：钱花在工时、装夹和公差上。</p>
+
+        <h2>一、材料利用率：从一整块板开始算</h2>
+        <p>报价里的材料费不是按零件净重算的，是按“要用掉多少料”算的。同一个零件，用整板下料和套料排版，材料费能差 20–40%。小件尤其明显：一块板上排十个还是排二十个，直接决定单价。</p>
+        <p>顺便看一眼板材规格：非标尺寸要单独订料，起订量和交期都会跟着变。</p>
+
+        <h2>二、装夹次数：每翻一次面都是钱</h2>
+        <p>三轴机床加工一个多面体，要翻两三次面，每次重新找正、重新对刀，既吃工时又攒误差。五轴可以一次装夹做完，但小时费率更高。所以不是五轴一定贵，要看零件复杂度。</p>
+        <p>想省钱的办法很土：把非关键面改成不加工，或者允许用毛坯面做基准，少一次装夹。</p>
+
+        <h2>三、公差与表面：最后 0.02 mm 最贵</h2>
+        <p>±0.05 和 ±0.01 之间，差的不是机床精度，是检测手段、刀具、加工策略和废品率。需要磨削、慢走丝、抛光的表面，价格是逐级往上跳的。</p>
+        <p>结构设计里很容易犯的错，是把所有尺寸都标成 ±0.02，其实真正有配合关系的只有几个。其余按一般公差走，价格立刻不一样。</p>
+
+        <h2>四、还有几笔容易被忽略的钱</h2>
+        <ul>
+          <li>编程与工装摊销：同一件东西做 1 件和做 100 件，单价能差一半</li>
+          <li>最低收费：很多厂有起步价，小件按重量算反而是亏的</li>
+          <li>交期：加急需插单，通常加 20–50%</li>
+          <li>后处理：阳极氧化、喷砂、丝印，按面积和颜色分档</li>
+        </ul>
+
+        <h2>五、报价单我会怎么看</h2>
+        <p>先看有没有把材料费和加工费分开，混在一起报的基本没法核对。再看有没有写清公差范围、表面处理标准、是否含税含运。最后问一句：这个价格对应多少次装夹、什么设备。回答含糊的，多半是按经验拍出来的。</p>
+
+        <p>询价比的不是最低价，是同一份图纸下谁的报价能被解释清楚。能被拆开讲明白的价格，才是可以长期合作的。</p>
+      </div>
+
+      <div class="post-foot">
+        <a class="back" href="../writing.html">← 全部文章</a>
+        <a class="back" href="../index.html">回到首页</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 唐工笔记</span>
+      <span>纯静态页面 · 托管于 GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>

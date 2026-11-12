@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>注塑件 DFM：壁厚、拔模、收缩率的三条红线 · 唐工笔记</title>
+  <meta name="description" content="把模厂 T1 之前会挑的问题提前挑掉，结构评审能少吵一半。">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">唐工<span>笔记</span></a>
+      <nav class="nav">
+        <a href="../index.html">首页</a>
+        <a class="on" href="../writing.html">文章</a>
+        <a href="../works.html">作品</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="article">
+      <header>
+        <p class="kicker">制造工艺 · 注塑</p>
+        <h1>注塑件 DFM：壁厚、拔模、收缩率的三条红线</h1>
+        <p class="meta">2026.10.28 · 约 8 分钟</p>
+      </header>
+
+      <div class="prose">
+        <p>第一次跟模厂开 DFM 评审，我准备的资料有二十多页，对方只花了三分钟，指着屏幕说了三个问题。后来自己复盘，这三个都属于同一类：不影响功能，但会让模具做不出来、或者做出来不好看。</p>
+
+        <h2>一、壁厚：不是越均匀越好，而是过渡要慢</h2>
+        <p>常规经验值：主壁厚 1.5–3 mm 是多数消费电子外壳的舒适区；小于 0.8 mm 的局部薄区容易短射，尤其是流程长的位置。</p>
+        <p>更常见的错误不是薄，而是“突然薄、突然厚”。厚度突变的地方冷却速度不一样，收缩不同步，表面就出缩痕。经验做法是把台阶变成斜坡，厚度变化按 1:3 以内的斜率过渡。</p>
+        <p>加强筋厚度取主壁的 0.6–0.7 倍，筋根部加 R 角；螺丝柱如果壁厚跟主壁一样，柱根部背面一定会缩水，把柱径做小、加拔模、或者在背面做火山口，都是常用解法。</p>
+
+        <h2>二、拔模：按纹理和深度分档</h2>
+        <p>一般取值：外表面不少于 1°，内腔和深孔 1.5–3°，越深越要加。</p>
+        <p>晒纹件是最容易漏算的：每 0.025 mm 纹理深度，通常要再加 1–1.5° 拔模，粗糙纹理加得更多。忘记这一步，脱模时拉伤，表面就废了。</p>
+        <p>还要把“外观面”和“配合面”分开看：外观面优先保证脱模，配合面优先保证尺寸。两个诉求打架时，先改结构，别硬顶。</p>
+
+        <h2>三、收缩率：材料给的只是起点</h2>
+        <p>常见参考：PP 约 1.5–2%，ABS 约 0.4–0.8%，PC 约 0.5–1.0%。加玻纤后各向异性明显，流动方向和垂直方向收缩差得多，长薄件就容易趣。</p>
+        <p>这些数字只能用来放余量，不能用来定尺寸。真正定尺寸的是模流分析和试模数据。结构工程师该做的是：把关键配合尺寸留出可调空间，别把公差叠加卡死。</p>
+
+        <h2>四、评审时我会问的六个问题</h2>
+        <ul>
+          <li>最薄处多少，流程有多长</li>
+          <li>有没有厚度突变的地方，过渡够不够缓</li>
+          <li>所有脱模方向都检查过拔模没有，纹理面加了几度</li>
+          <li>熔接线会落在哪个位置，是不是外观面或受力处</li>
+          <li>螺丝柱、卡扣这些局部厚区，背面会不会缩水</li>
+          <li>顶出位置能不能避开外观面</li>
+        </ul>
+
+        <p>这些都不是高深的东西，但每一条都能在开模前省下一次改模。DFM 评审的价值不在于“通过了”，而在于把问题提前暴露在纸面上。</p>
+      </div>
+
+      <div class="post-foot">
+        <a class="back" href="../writing.html">← 全部文章</a>
+        <a class="back" href="../index.html">回到首页</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 唐工笔记</span>
+      <span>纯静态页面 · 托管于 GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>
